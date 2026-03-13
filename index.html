@@ -9,6 +9,42 @@
 </head>
 <body>
       <a-scene >
+       <!-- SUMMER HUT -->
+
+<a-entity position="0 0 1">
+
+  <!-- Hut floor -->
+
+<a-cylinder position="0 0.05 0"
+           radius="3"
+           height="0.1"
+           color="#DEB887"
+           shadow="receive: true"> </a-cylinder>
+
+  <!-- Pillars -->
+
+<a-cylinder position="2 1.5 " radius="0.15" height="3" color="#8B4513"></a-cylinder> <a-cylinder position="-2 1.5 " radius="0.15" height="3" color="#8B4513"></a-cylinder> <a-cylinder position="2 1.5 -2" radius="0.15" height="3" color="#8B4513"></a-cylinder> <a-cylinder position="-2 1.5 -2" radius="0.15" height="3" color="#8B4513"></a-cylinder>
+
+  <!-- Roof -->
+
+<a-cone position="0 3.5 1"
+       radius-bottom="3.5"
+       radius-top="1"
+       height=""
+       color="#CD853F"
+       segments-radial="8"
+       shadow="cast: true"> </a-cone>
+
+  <!-- Roof decoration (thatch effect) -->
+
+<a-ring position="0 1.5 0"
+       rotation="-90 0 0"
+       radius-inner="2.8"
+       radius-outer="3"
+       color="#A0522D"> </a-ring>
+
+</a-entity>
+
         <!-- Assets -->
       <a-assets>
         <!-- Milo green color -->
